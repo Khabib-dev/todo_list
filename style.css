@@ -1,0 +1,46 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 100%;
+  min-height: 100vh;
+  background-color: #0fc97b;
+  padding: 10px;
+}
+
+.todo {
+  width: 100%;
+  max-width: 300px;
+  min-height: 150px;
+  background: #fcfcfc;
+  margin: 100px auto 20px;
+  padding: 15px;
+  border-radius: 10px;
+}
+.todo__input {
+  width: 220px;
+  padding-left: 4px;
+}
+ul li {
+  background-color: #0cd6cc;
+  cursor: pointer;
+  margin-top: 5px;
+  list-style: none;
+  display: flex;
+  border-radius: 4px;
+  justify-content: space-between;
+}
+
+ul li input {
+  margin-left: 5px;
+}
+
+ul li i {
+  margin-right: 5px;
+}
+ul li.check {
+  text-decoration: line-through;
+}
