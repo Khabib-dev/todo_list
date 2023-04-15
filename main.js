@@ -22,7 +22,7 @@ addTodo.addEventListener("submit", (e) => {
 //Checked and Delete
 todoList.addEventListener(
   "click",
-  function (e) {
+  (e) => {
     if (e.target.tagName === "INPUT") {
       e.target.parentElement.classList.toggle("check");
       saveTodo();
