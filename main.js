@@ -1,17 +1,16 @@
-const inputValue = document.querySelector("#todo-input");
 const addTodo = document.querySelector("form");
 const todoList = document.querySelector("#todo-item");
 
 //AddTodoList
 addTodo.addEventListener("submit", (e) => {
   e.preventDefault();
-  if (inputValue.value === "") {
+  if (addTodo.value === "") {
     alert("Ma'lumot mavjud emas!");
   } else {
     let li = document.createElement("li");
     li.innerHTML =
       `<input class="check" type="checkbox">` +
-      inputValue.value +
+      addTodo.value +
       `<i class="fa-solid fa-trash"></i>`;
     todoList.appendChild(li);
   }
